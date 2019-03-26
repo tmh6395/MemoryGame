@@ -1,3 +1,17 @@
+# Futurama Memory Game
+
+## Description:
+This application is a click-based memory game with a Futurama theme. After clicking on an image, the images will reshuffle. Your goal is to try to get the max score (which goes up to 12).
+
+## Rules:
+1. Click on an image and remember it.
+2. Click on any other image that you haven't clicked yet.
+3. Repeat clicking images that you have not clicked until your score is at max.
+
+If you reach the max score, your score will reset on the next click. Or if you fail and re-click an image, your score will also reset.
+
+**********************************************************************
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
