@@ -15,3 +15,5 @@ If you reach the max score, your score will reset on the next click. Or if you f
 [Link to YouTube Video Demonstration (Click Hyperlink or Image Below)](https://www.youtube.com/watch?v=FwgJaC0qbG0)
 
 [![Link to YouTube Video Demonstration](https://img.youtube.com/vi/FwgJaC0qbG0/0.jpg)](https://www.youtube.com/watch?v=FwgJaC0qbG0 "Memory Game")
+
+### Note: Please switch to the master branch to see the main code of the application.
