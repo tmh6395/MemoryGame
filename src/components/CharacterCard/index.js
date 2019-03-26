@@ -18,6 +18,3 @@ function CharacterCard(props){
 }
 
 export default CharacterCard;
-
-
-{/* <span className="remove" onClick={() => props.deleteFriend(props.id)}>𝘅</span> */}

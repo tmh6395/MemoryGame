@@ -44,6 +44,7 @@ class App extends React.Component {
     this.setState({ characters: shuffle(characters) })
   }
 
+  
   // Render the page
   render() {
     return (

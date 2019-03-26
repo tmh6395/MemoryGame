@@ -10,6 +10,12 @@ This application is a click-based memory game with a Futurama theme. After click
 
 If you reach the max score, your score will reset on the next click. Or if you fail and re-click an image, your score will also reset.
 
+# Video Demonstration of the App:
+
+[Link to YouTube Video Demonstration (Click Hyperlink or Image Below)](https://www.youtube.com/watch?v=FwgJaC0qbG0)
+
+[![Link to YouTube Video Demonstration](https://img.youtube.com/vi/FwgJaC0qbG0/0.jpg)](https://www.youtube.com/watch?v=FwgJaC0qbG0 "Memory Game")
+
 **********************************************************************
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
