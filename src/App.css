@@ -31,3 +31,25 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper{
+  background-color: rgb(19, 151, 70);
+}
+
+h1{
+  color: red;
+  text-shadow: -2px 0 yellow, 0 2px yellow, 
+  2px 0 yellow, 0 -2px yellow;
+}
+
+html{
+  background-color: rgb(53, 99, 173);
+  text-align: center;
+}
+
+.title{
+  background-color: rgb(114, 114, 114);
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}

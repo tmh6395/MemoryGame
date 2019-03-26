@@ -1,0 +1,13 @@
+.card{
+	background: linear-gradient(to top, rgb(19, 151, 70), lightblue, rgb(19, 151, 70));
+	color: transparent;
+	margin-top: 1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	display: inline-block;
+}
+
+img, #image-container, .card{
+	width: 150px;
+	height: 311px;
+}
