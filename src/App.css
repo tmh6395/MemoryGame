@@ -53,3 +53,8 @@ html{
   border-left: none;
   border-right: none;
 }
+
+#lost-msg{
+  margin-top: 0;
+  display: none;
+}

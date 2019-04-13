@@ -10,46 +10,49 @@ class App extends React.Component {
   state = {
     characters: characters,
     clickedArray: [],
-    score: 0
+    score: 0,
+    styles: {
+      display: "none",
+    }
   }
 
   // Function that checks if the clicked person was already clicked
   clickFunc = id => {
-
-    // Filters out the character that was clicked
-    // let currentCharacter = characters.filter(person => {
-    //   return person.id === id;
-    // });
-    // console.log("=======================================");
-    // console.log("currentCharacter: ", currentCharacter);
+console.log(this.state.clickedArray);
+    if (this.state.clickedArray.length === 11) {
+      document.getElementById("won-msg").style.display = "block";
+      this.setState({ clickedArray: [] })
+      this.setState({ score: 0 })
+    }
 
     // Check if character was clicked already
-    if (this.state.clickedArray.includes(id)) {
-      // console.log("was clicked");
+    else if (this.state.clickedArray.includes(id)) {
+      document.getElementById("lost-msg").style.display = "block";
       this.setState({ clickedArray: [] })
-      // console.log("was clicked: clickedArray: ", this.state.clickedArray)
       this.setState({ score: 0 })
     }
 
     // Else the character has not yet been clicked
     else {
-      // console.log("was not clicked");
+      document.getElementById("won-msg").style.display = "none";
+      document.getElementById("lost-msg").style.display = "none";
       this.state.clickedArray.push(id);
-      // console.log("was not clicked: clickedArray: ", this.state.clickedArray)
       this.setState({ score: this.state.score + 1 })
     }
-    // console.log("after both: clickedArray: ", this.state.clickedArray)
 
     // Comment out the below line to test without shuffling
-    this.setState({ characters: shuffle(characters) })
+    // this.setState({ characters: shuffle(characters) })
   }
 
-  
+
   // Render the page
   render() {
     return (
       <Wrapper>
-        <h1 className="title">FUTURAMA MEMORY GAME - Score: {this.state.score}/12</h1>
+        <h1 className="title">FUTURAMA MEMORY GAME - Score: {this.state.score}/12
+          <p id="won-msg" style={this.state.styles}>Congratulations, you won! You can click a character to start again.</p>
+          <p id="lost-msg">I'm sorry, but you lost. You can click a character to start again.</p>
+        </h1>
         {this.state.characters.map(
           character => <CharacterCard
             key={character.id}
