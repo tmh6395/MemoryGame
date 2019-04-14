@@ -41,7 +41,7 @@ console.log(this.state.clickedArray);
     }
 
     // Comment out the below line to test without shuffling
-    // this.setState({ characters: shuffle(characters) })
+    this.setState({ characters: shuffle(characters) })
   }
 
 
